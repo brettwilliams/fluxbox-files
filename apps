@@ -1,0 +1,24 @@
+[group]  (workspace=[current])
+ [app] (name=Gvim)
+[end]
+[group]  (workspace=[current])
+ [app] (name=Xterm)
+[end]
+[group]  (workspace=[current])
+ [app] (name=rdesktop)
+ [app] (name=Firefox)
+[end]
+[app] (name=pidgin) (class=Pidgin) (role=conversation)
+  [Dimensions]	{1595 1184}
+  [Position]	(UPPERLEFT)	{4 1}
+  [Sticky]	{no}
+  [Close]	{yes}
+[end]
+[group]  (workspace=[current])
+ [app] (name=xterm)
+[end]
+[app] (title=.*Jobs.*) (name=mrxvt)
+  [Deco]	{NORMAL}
+  [Hidden]	{yes}
+  [Sticky]	{yes}
+[end]

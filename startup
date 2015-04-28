@@ -1,0 +1,68 @@
+# fluxbox startup-script:
+#
+# Lines starting with a '#' are ignored.
+
+# You can set your favourite wallpaper here if you don't want
+# to do it from your style.
+#
+# fbsetbg -f /net/easystreet/vol/homes/brettw/pictures/wallpaper.png
+#
+# This sets a black background
+
+/usr/bin/fbsetroot -solid black
+
+# This shows the fluxbox-splash-screen
+# fbsetbg -C /usr/share/fluxbox/splash.jpg
+
+# Other examples. Check man xset for details.
+#
+# Turn off beeps:
+# xset -b
+#
+# Increase the keyboard repeat-rate:
+# xset r rate 195 35
+#
+# Your own fonts-dir:
+# xset +fp "/net/easystreet/vol/homes/brettw/.fonts"
+#
+# Your favourite mouse cursor:
+# xsetroot -cursor_name right_ptr
+#
+# Change your keymap:
+# xmodmap "/net/easystreet/vol/homes/brettw/.Xmodmap"
+
+
+
+# Applications you want to run with fluxbox.
+# MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN ''&'' AT THE END.
+#
+# unclutter -idle 2 &
+# wmnd &
+# wmsmixer -w &
+# idesk &
+
+# start up screen saver
+# if [[ "$DISPLAY" = ":0" ]]; then
+#   /usr/bin/gnome-screensaver&
+# fi
+echo "export DISPLAY=$HOSTNAME$DISPLAY" > ~/.set_display
+
+# start up windows
+#mrxvt +sb -geometry 135x16+0-20 -title 'Aprisa Jobs' -e  watch -n 60 "/opt/ictools/bin/gstat | grep -e ap_pl -e aRt" &
+#sleep 3
+#mrxvt +sb -geometry 131x16+810-20 -title 'brettw Grid Jobs' -e watch gstat -u brettw &
+#${HOME}/.fluxbox/scripts/start_windows.sh &
+
+# start doc apps
+# /usr/bin/wmbiff -skip-certificate-check option 2> /dev/null&
+#/usr/X11R6/bin/Temperature.app -f -s KFNL 2> /dev/null&
+
+# klipper
+#/usr/bin/klipper &
+
+# And last but not least we start fluxbox.
+# Because it is the last app you have to run it with ''exec'' before it.
+
+exec /usr/bin/fluxbox
+# or if you want to keep a log:
+# exec /usr/bin/fluxbox -log "/net/easystreet/vol/homes/brettw/.fluxbox/log"

@@ -1,0 +1,88 @@
+! fluxbox-update_configs added '(workspace=[current])' to (Next|Prev)(Window|Group)
+! check lines marked by 'FBCV13' if they are correctly updated
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse1 :MacroCmd {Focus} {Raise} {ActivateTab}
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Move1 :StartMoving
+OnLeftGrip Move1 :StartResizing bottomleft
+OnRightGrip Move1 :StartResizing bottomright
+OnWindowBorder Move1 :StartMoving
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Mouse2 :StartTabbing
+
+!mouse actions added by fluxbox-update_configs
+OnTitlebar Double Mouse1 :Shade
+OnTitlebar Mouse3 :WindowMenu
+
+!mouse actions added by fluxbox-update_configs
+OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+
+!!!!!! Resize using nearest corner when I hold alt + right mouse
+OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+
+!!!!!! With windowskey + left mouse, lower
+OnWindow Mod4 Mouse1 :MacroCmd {Lower}
+
+!mouse actions added by fluxbox-update_configs
+OnToolbar Mouse4 :NextWorkspace
+OnToolbar Mouse5 :PrevWorkspace
+
+OnDesktop Mouse1 :HideMenus
+OnDesktop Mouse2 :WorkspaceMenu
+OnDesktop Mouse3 :RootMenu
+OnDesktop Mouse4 :NextWorkspace
+OnDesktop Mouse5 :PrevWorkspace
+
+Mod1 Tab :NextWindow (workspace=[current]) !! FBCV13 !!
+Mod1 Shift Tab :PrevWindow (workspace=[current]) !! FBCV13 !!
+
+Mod1 F1 :MacroCmd {Workspace 1} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F2 :MacroCmd {Workspace 2} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F3 :MacroCmd {Workspace 3} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F4 :MacroCmd {Workspace 4} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F5 :MacroCmd {Workspace 5} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F6 :MacroCmd {Workspace 6} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F7 :MacroCmd {Workspace 7} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F8 :MacroCmd {Workspace 8} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F9 :MacroCmd {Workspace 9} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F10 :MacroCmd {Workspace 10} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F11 :MacroCmd {Workspace 11} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 F12 :MacroCmd {Workspace 12} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+
+# Programs
+Mod1 Return :ExecCommand mrxvt
+
+Mod1 Right :MacroCmd {NextWorkspace} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+Mod1 Left :MacroCmd {PrevWorkspace} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
+
+166 :PrevWorkspace
+167 :NextWorkspace
+
+# Window Controls
+Mod4 backslash :Raise
+Mod4 Shift backslash :Lower
+Mod4 minus :Close
+Control 1 :MaximizeWindow
+Control 2 :MaximizeVertical
+Control 3 :MaximizeHorizontal
+#Mod4 Right :NextTab
+#Mod4 Left :PrevTab
+Mod3 h :MacroCmd {FocusLeft} {ExecCommand ~/.fluxbox/scripts/move_mouse_to_focused_win.sh}
+Mod3 l :MacroCmd {FocusRight} {ExecCommand ~/.fluxbox/scripts/move_mouse_to_focused_win.sh}
+Mod3 j :MacroCmd {FocusDown} {ExecCommand ~/.fluxbox/scripts/move_mouse_to_focused_win.sh}
+Mod3 k :MacroCmd {FocusUp} {ExecCommand ~/.fluxbox/scripts/move_mouse_to_focused_win.sh}
+
+# Snap to corners using numkeys
+Mod1 100 :MoveTo 0 0 UpperRight
+Mod1 97 :MoveTo 0 0 UpperLeft
+Mod1 91 :MoveTo 0 0 LowerLeft
+Mod1 93 :MoveTo 0 0 LowerRight
+Mod1 94 :MoveTo 0 * Left
+Mod1 96 :MoveTo 0 * Right
+
+# Bump
+Mod1 Shift Right :MoveRight 100
+Mod1 Shift Left :MoveLeft 100
+Mod1 Shift Up :MoveUp 100
+Mod1 Shift Down :MoveDown 100
