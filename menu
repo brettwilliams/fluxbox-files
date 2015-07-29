@@ -22,8 +22,8 @@
 [begin] (Fluxbox-1.0.0)
 [encoding] {UTF-8}
       [exec] (gnome-terminal) {gnome-terminal}
-      [exec] (right wizard terminal) {gnome-terminal --geometry=315x76+1920 --title=wizard}
-      [exec] (left wizard terminal) {gnome-terminal --geometry=315x76+0 --title=wizard}
+      [exec] (right wizard terminal) {gnome-terminal --geometry=319x76+1920 --title=wizard}
+      [exec] (left wizard terminal) {gnome-terminal --geometry=319x76+0 --title=wizard}
       [exec] (Chrome-Home) {/opt/chromium/chrome-wrapper --proxy-server=$http_proxy --proxy-bypass-list="*.lsi.com;*.lsil.com" --user-data-dir=.config/google-chrome-home}
       [exec]   (pidgin) {gaim}
       [exec]   (Run) {fbrun }

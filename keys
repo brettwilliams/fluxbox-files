@@ -51,7 +51,7 @@ Mod1 F11 :MacroCmd {Workspace 11} {ExecCommand ~/.fluxbox/scripts/display_worksp
 Mod1 F12 :MacroCmd {Workspace 12} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
 
 # Programs
-Mod1 Return :ExecCommand mrxvt
+Mod1 Return :ExecCommand gnome-terminal
 
 Mod1 Right :MacroCmd {NextWorkspace} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}
 Mod1 Left :MacroCmd {PrevWorkspace} {ExecCommand ~/.fluxbox/scripts/display_workspace.sh}

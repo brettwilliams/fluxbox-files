@@ -22,11 +22,11 @@ fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2003.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:1.0
-fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2002.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|localhost:13.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|coftstltc3:10.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|localhost:10.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|coftstltc2:15.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|coftstltc2:12.0
-fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2001.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2000.0
+fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2001.0
+fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2002.0
