@@ -79,7 +79,7 @@ session.screen0.maxDisableResize:	false
 session.screen0.windowPlacement:	RowSmartPlacement
 session.screen0.workspaceNames:	support:1, ddsk:2, littleben:3, ddsk_scripts:4, block_flow:5, misc-wiz:6, sites:7, star:8, misc1:9, misc2:10, misc3:11, misc4:12,
 session.colorsPerChannel:	4
-session.slitlistFile:	/net/easystreet/vol/homes/brettw/.fluxbox/slitlist
+session.slitlistFile:	/home/brettw/.fluxbox/slitlist
 session.cacheMax:	200
 session.keyFile:	~/.fluxbox/keys
 session.modKey:	Mod1
@@ -97,4 +97,4 @@ session.doubleClickInterval:	250
 session.ignoreBorder:	false
 session.autoRaiseDelay:	250
 session.forcePseudoTransparency:	false
-session.styleFile:	/net/easystreet/vol/homes/brettw/.fluxbox/styles/brett_zimek_darkblue
+session.styleFile:	/home/brettw/.fluxbox/styles/brett_zimek_darkblue

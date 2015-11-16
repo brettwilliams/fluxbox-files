@@ -1,9 +1,9 @@
-$full $full|/net/easystreet/vol/homes/brettw/.backgrounds/dual_backgrounds/tendrils2x.jpg|:0.0
-$center $full|/net/easystreet/vol/homes/brettw/.backgrounds/dual_backgrounds/homeworld2x.jpg|:1000.0
-$center $full|/net/easystreet/vol/homes/brettw/.backgrounds/dual_backgrounds/homeworld2x.jpg|:1001.0
-$full $full|/net/easystreet/vol/homes/brettw/.backgrounds/dual_backgrounds/sunsetfog2x.jpg|:1003.0
-$full $full|/net/easystreet/vol/homes/brettw/.backgrounds/dual_backgrounds/PlanetRings_w3200_h1200.jpg|:1004.0
-$full $full|/net/easystreet/vol/homes/brettw/.backgrounds/dual_backgrounds/PlanetRings_w3200_h1200.jpg|:1006.0
+$full $full|/home/brettw/.backgrounds/dual_backgrounds/tendrils2x.jpg|:0.0
+$center $full|/home/brettw/.backgrounds/dual_backgrounds/homeworld2x.jpg|:1000.0
+$center $full|/home/brettw/.backgrounds/dual_backgrounds/homeworld2x.jpg|:1001.0
+$full $full|/home/brettw/.backgrounds/dual_backgrounds/sunsetfog2x.jpg|:1003.0
+$full $full|/home/brettw/.backgrounds/dual_backgrounds/PlanetRings_w3200_h1200.jpg|:1004.0
+$full $full|/home/brettw/.backgrounds/dual_backgrounds/PlanetRings_w3200_h1200.jpg|:1006.0
 fbsetroot||style|:1007.0
 fbsetroot||style|:1008.0
 fbsetroot||style|:1009.0
@@ -19,14 +19,15 @@ fbsetroot||style|:2009.0
 fbsetroot||style|:2011.0
 fbsetroot||style|:2010.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2004.0
-fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2003.0
-fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2.0
-fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:1.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|localhost:13.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|coftstltc3:10.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|localhost:10.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|coftstltc2:15.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|coftstltc2:12.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2000.0
-fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2001.0
 fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2002.0
+fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2001.0
+fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2003.0
+fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:3.0
+fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:1.0
+fbsetroot|-foreground #1C232E -background #12233F -gradient flatgradientelliptic|style|:2.0

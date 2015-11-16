@@ -19,11 +19,22 @@
 #      [exec] (Firefox-Work) {firefox -P Work -new-instance}
 #      [exec] (Firefox-WorkNewWindow) {firefox -P Work -new-window}
 #      [exec] (Firefox-Home) {firefox -P Home -new-instance}
+#      [exec] (right wizard terminal) {gnome-terminal --geometry=319x76+1920 --title=wizard}
+#      [exec] (left wizard terminal) {gnome-terminal --geometry=319x76+0 --title=wizard}
+      # [exec] (gnome-terminal) {gnome-terminal}
+      # [exec] (right wizard terminal) {gnome-terminal --geometry=319x76+1920 --title=wizard}
+      # [exec] (left wizard terminal) {gnome-terminal --geometry=319x76+0 --title=wizard}
+      # [exec] (mrxvt) {mrxvt +sb}
+      # [exec] (wizard left terminal) {mrxvt +sb -geometry 320x76+0 -title wizard}
+      # [exec] (wizard right terminal) {mrxvt +sb -geometry 320x76+1920 -title wizard}
+      [exec] (right ST) {st -g 273x73+1920 -t wizard}
+      [exec] (left ST) {st -g 273x73+0 -t wizard}
 [begin] (Fluxbox-1.0.0)
 [encoding] {UTF-8}
       [exec] (gnome-terminal) {gnome-terminal}
       [exec] (right wizard terminal) {gnome-terminal --geometry=319x76+1920 --title=wizard}
       [exec] (left wizard terminal) {gnome-terminal --geometry=319x76+0 --title=wizard}
+      [exec] (simple terminal) {st}
       [exec] (Chrome-Home) {/opt/chromium/chrome-wrapper --proxy-server=$http_proxy --proxy-bypass-list="*.lsi.com;*.lsil.com" --user-data-dir=.config/google-chrome-home}
       [exec]   (pidgin) {gaim}
       [exec]   (Run) {fbrun }
