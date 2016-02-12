@@ -9,7 +9,13 @@
 #
 # This sets a black background
 
-/usr/bin/fbsetroot -solid black
+#/usr/bin/fbsetroot -solid black
+
+if [[ $HOSTNAME == "darkshore" ]]; then
+  /usr/bin/fbsetroot -gradient  elliptic -from "#1C232E" -to "#12233F"
+else
+  /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#934333"
+fi
 
 # This shows the fluxbox-splash-screen
 # fbsetbg -C /usr/share/fluxbox/splash.jpg
