@@ -12,11 +12,16 @@
 #/usr/bin/fbsetroot -solid black
 
 domain=$(dnsdomainname)
-if [[ $HOSTNAME =~ ftc ]]; then
-  /usr/bin/fbsetroot -gradient  elliptic -from "#1C232E" -to "#140030"
-else
-  /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#934333"
-fi
+case $domain in
+  ftc*) /usr/bin/fbsetroot -gradient  elliptic -from "#1C232E" -to "#140030" ;;
+  sgn*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#134333" ;;
+  sha*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#934333" ;;
+  ibn*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#112277" ;;
+  sjs*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#444444" ;;
+  ash*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#330044" ;;
+  *)
+  ;;
+esac
 
 # This shows the fluxbox-splash-screen
 # fbsetbg -C /usr/share/fluxbox/splash.jpg
