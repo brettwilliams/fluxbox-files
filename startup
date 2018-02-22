@@ -53,7 +53,7 @@ fi
 # if [[ "$DISPLAY" = ":0" ]]; then
 #   /usr/bin/gnome-screensaver&
 # fi
-echo "export DISPLAY=$HOSTNAME$DISPLAY" > ~/.set_display
+#echo "export DISPLAY=$HOSTNAME$DISPLAY" > ~/.set_display
 
 # start up windows
 #mrxvt +sb -geometry 135x16+0-20 -title 'Aprisa Jobs' -e  watch -n 60 "/opt/ictools/bin/gstat | grep -e ap_pl -e aRt" &
