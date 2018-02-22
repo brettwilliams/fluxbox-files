@@ -11,9 +11,8 @@
 
 #/usr/bin/fbsetroot -solid black
 
-if [[ $HOSTNAME == "darkshore" ]]; then
-  /usr/bin/fbsetroot -gradient  elliptic -from "#1C232E" -to "#12233F"
-elif [[ $HOSTNAME == "ftcvda0045" ]]; then
+domain=$(dnsdomainname)
+if [[ $HOSTNAME =~ ftc ]]; then
   /usr/bin/fbsetroot -gradient  elliptic -from "#1C232E" -to "#140030"
 else
   /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#934333"
