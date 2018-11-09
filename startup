@@ -19,6 +19,7 @@ case $domain in
   ibn*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#112277" ;;
   sjs*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#444444" ;;
   ash*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#330044" ;;
+  gwd*) /usr/bin/fbsetroot -gradient  elliptic -from "#000000" -to "#996644" ;;
   *)
   ;;
 esac
